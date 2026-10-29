@@ -2,6 +2,8 @@
 
 **Fine-tuning Meta's Segment Anything Model (SAM) to segment mitochondria in electron microscopy images.**
 
+![MitoSAM prediction: input image, predicted mask, and probability map](Example.png)
+
 MitoSAM adapts the general-purpose [Segment Anything Model](https://github.com/facebookresearch/segment-anything) to one narrow biomedical task: segmenting mitochondria in electron microscopy (EM) images. Instead of starting from a medical variant like MedSAM, it fine-tunes the original `sam-vit-base` checkpoint on a small annotated dataset. The result is a lightweight, specialised "mini-MedSAM". It shows that a foundation model can be repurposed for a complex biomedical problem with limited labelled data.
 
 ---
